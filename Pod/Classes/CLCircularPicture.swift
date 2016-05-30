@@ -15,11 +15,11 @@ public enum UIPageControlMode : Int {
     case Right
 }
 
-public protocol CLCycleScrollViewDelegate{
+public protocol CLCircularPictureDelegate{
     func clickCurrentImage(currentIndex: Int)
 }
 
-public class CLCycleScrollView: UIView,UIScrollViewDelegate {
+public class CLCircularPicture: UIView,UIScrollViewDelegate {
 
     //MARK:定义属性
     //穿件scrollView
@@ -37,7 +37,7 @@ public class CLCycleScrollView: UIView,UIScrollViewDelegate {
     //设置pageControl对齐方式(默认居中)
     public var pageControlMode:UIPageControlMode = .Center
     
-    public var delegate: CLCycleScrollViewDelegate!
+    public var delegate: CLCircularPictureDelegate!
     
     var isShowPlaceholder: Bool = false
     
