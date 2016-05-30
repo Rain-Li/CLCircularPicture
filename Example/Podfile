@@ -1,0 +1,6 @@
+use_frameworks!
+target 'CLCircularPicture_Tests' do
+  pod 'CLCircularPicture', :path => '../'
+  
+  
+end
